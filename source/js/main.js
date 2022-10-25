@@ -44,3 +44,21 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+
+function showText () {
+  const aboutButton = document.querySelector(".about__button");
+  const moreText = document.querySelector(".about__text-more");
+
+  if (!moreText.classList.contains("about__text-more--opened")) {
+    aboutButton.textContent = "Свернуть";
+    moreText.classList.add("about__text-more--opened");
+  } else {
+    aboutButton.textContent = "Подробнее";
+    moreText.classList.remove("about__text-more--opened");
+  }
+}
+
+document
+  .querySelector(".about__button")
+  .addEventListener("click", showText);

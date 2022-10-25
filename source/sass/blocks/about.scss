@@ -1,0 +1,51 @@
+.about {
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: 150px 82%;
+  column-gap: 103px;
+  padding: 0;
+  padding-top: 46px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+}
+
+.about__description {
+  color: $color-black-pearl;
+
+  & h3 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: $ff-roboto-condensed;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  & p {
+    line-height: 22px;
+  }
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about__text-more {
+  margin: 0;
+  display: none;
+}
+
+.about__text-more--opened {
+  display: block;
+}
+
+.about__button {
+  display: flex;
+  justify-content: center;
+  min-width: 180px;
+  margin-top: 40px;
+  padding: 13px 25px;
+  background-color: transparent;
+  border: 1px solid $color-deep-sky-blue;
+  color: $color-deep-sky-blue;
+}
