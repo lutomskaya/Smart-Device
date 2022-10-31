@@ -59,10 +59,11 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-deep-sky-blue;
+    color: $color-default-white;
 
     @include vp-767 {
       width: 100%;
@@ -70,10 +71,27 @@
     }
   }
 
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: $ff-roboto-condensed;
+    font-size: 30px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    line-height: 22px;
+  }
+
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 24px;
+    right: 24px;
     z-index: 1;
 
     width: 40px;
@@ -116,4 +134,18 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__form .form__footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__form--footer .form__button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal__form .modal__form--footer label {
+  width: 100%;
 }

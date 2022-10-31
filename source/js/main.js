@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {showText} from './modules/about.js';
 
 // ---------------------------------
 
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
+  showText();
   window.addEventListener('load', () => {
     initModals();
   });
@@ -44,21 +46,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
-
-
-function showText () {
-  const aboutButton = document.querySelector(".about__button");
-  const moreText = document.querySelector(".about__text-more");
-
-  if (!moreText.classList.contains("about__text-more--opened")) {
-    aboutButton.textContent = "Свернуть";
-    moreText.classList.add("about__text-more--opened");
-  } else {
-    aboutButton.textContent = "Подробнее";
-    moreText.classList.remove("about__text-more--opened");
-  }
-}
-
-document
-  .querySelector(".about__button")
-  .addEventListener("click", showText);

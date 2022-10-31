@@ -37,7 +37,7 @@
               <p>+7 (495) 000 52 52</p>
             </a>
           </div>
-          <button class="main-header__button button" type="button">Заказать звонок</button>
+          <button class="main-header__button button" type="button" data-open-modal="feedback">Заказать звонок</button>
         </div>
       </header>
       <main>
@@ -70,7 +70,7 @@
               <p class="featuries__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее&nbsp;качество нашей продукции.
               </p>
             </li>
-            <li class="featuries__item featuries__item--small">
+            <li class="featuries__item featuries__item--confed">
               <svg width="35" height="35" aria-label="Конфиденциальность.">
                 <use xlink:href="/img/sprite_auto.svg#detective"></use>
               </svg>
@@ -78,12 +78,12 @@
               <p class="featuries__text">По желанию клиента  мы обеспечиваем полную конфиденциальность.
               </p>
             </li>
-            <li class="featuries__item featuries__item--small">
+            <li class="featuries__item featuries__item--price">
               <svg width="35" height="35" aria-label="Стоимость.">
                 <use xlink:href="/img/sprite_auto.svg#tag"></use>
               </svg>
               <h3 class="featuries__title">Персонализация стоимости</h3>
-              <p class="featuries__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+              <p class="featuries__text">Мы подбираем определенную&nbsp;фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
               </p>
             </li>
           </ul>
@@ -95,57 +95,71 @@
           </div>
           <div class="about__description">
             <h3 class="about__title">О&nbsp;компании</h2>
-            <p class="about__text">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые&nbsp;технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до&nbsp;10 дней.</p>
-            <p class="about__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-            <p class="about__text-more">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
-            </p>
-            <button class="about__button button" type="button">Подробнее</button>
+            <div class="about__text" data-text>
+              <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы&nbsp;и пилотные образцы до&nbsp;10&nbsp;дней.</p>
+              <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <br> Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+            </div>
+            <div class="about__text" data-more>
+              <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
+              <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
+            </div>
+            <button class="about__button button" type="button" data-button>Подробнее</button>
           </div>
         </section>
         <section class="services">
-          <h2 class="services__title">Smart Device предлагает следующие товары и услуги</h2>
-          <ul class="services__list">
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <h4>Производство печатных плат</h4>
-                <div class="services__button"></div>
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <h4>Монтаж печатных плат</h4>
-                <div class="services__button"></div>
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <h4>Комплектующие для светотехники</h4>
-                <div class="services__button"></div>
-              </a>
-            </li>
-          </ul>
+          <div class="services__wrapper container">
+            <h2>
+              <span class="services__title services__title--tablet">Smart Device предлагает следующие товары и услуги</span>
+              <span class="services__title services__title--mobile">Товары и услуги Smart&nbsp;Device</span>
+            </h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <a class="services__link" href="#">
+                  <h4>Производство печатных&nbsp;плат</h4>
+                  <div class="services__button"></div>
+                </a>
+              </li>
+              <li class="services__item">
+                <a class="services__link" href="#">
+                  <h4>Монтаж печатных <br> плат</h4>
+                  <div class="services__button"></div>
+                </a>
+              </li>
+              <li class="services__item">
+                <a class="services__link" href="#">
+                  <h4>Комплектующие для&nbsp;светотехники</h4>
+                  <div class="services__button"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="feedback" id="feedback">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <img src="/img/paper_airplane.png" srcset="/img/paper_airplane@2x.png 2x" alt="Самолёт." width="510" height="285">
-          <div class="form">
-            <h2>Остались вопросы? Задайте их нам!</h2>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <div class="form__header">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" id="name" placeholder="Имя" required>
-                <label class="visually-hidden" for="phone">Телефон</label>
-                <input type="tel" id="phone" pattern="\+7\(\d{3}\)\d{7}" placeholder="Телефон" required>
-              </div>
-              <label class="visually-hidden" for="question">Ваш вопрос</label>
-              <textarea id="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
-              <div class="form__footer">
-                <button class="form__button button" type="submit">Задать вопрос</button>
-                <input type="checkbox" id="checkbox" required checked>
-                <label for="checkbox">Я согласен на обработку  персональных данных</label>
-              </div>
-            </form>
+          <div class="feedback__wrapper container">
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <!-- <img src="/img/paper_airplane.png" srcset="/img/paper_airplane@2x.png 2x" alt="Самолёт." width="510" height="285"> -->
+            <div class="form">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="form__header">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input type="text" id="name" placeholder="Имя" required>
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input type="tel" id="phone" pattern="\+7\(\d{3}\)\d{7}" placeholder="Телефон" required>
+                </div>
+                <label class="visually-hidden" for="question">Ваш вопрос</label>
+                <textarea id="question" placeholder="Ваш вопрос"></textarea>
+                <div class="form__footer">
+                  <button class="form__button button" type="submit">Задать вопрос</button>
+                  <label>
+                    <input type="checkbox" required checked>
+                    <span class="form__mark"></span>
+                    <span class="form__text">Я согласен на обработку  персональных данных</span>
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </main>
@@ -189,13 +203,10 @@
               </ul>
             </div>
           </div>
-          <div class="main-footer__nav">
-            <div class="main-footer__header">
-              <h2>Разделы сайта</h2>
-              <button class="main-footer__nav-button main-footer__nav-button--open" type="button" aria-label="Открыть."></button>
-            </div>
-            <div class="main-footer__nav-wrapper">
-              <ul class="main-footer__nav-list main-footer__nav-list--first">
+          <div class="main-footer__accordion accordion">
+            <button class="accordion__button" type="button" data-accordion-button>Разделы сайта</button>
+            <div class="accordion__item" data-accordion-item>
+              <ul class="main-footer__nav-list">
                 <li class="main-footer__nav-item">
                   <a href="#">О Компании</a>
                 </li>
@@ -222,51 +233,55 @@
               </ul>
             </div>
           </div>
-          <div class="main-footer__contacts">
-            <div class="main-footer__header">
-              <h2>Наш офис</h2>
-              <button class="main-footer__contacts-button main-footer__contacts-button--open" type="button" aria-label="Открыть."></button>
+          <div class="main-footer__accordion accordion">
+            <button class="accordion__button" type="button" data-accordion-button>Наш офис</button>
+            <div class="accordion__item">
+              <div class="main-footer__contacts">
+                <p>г. Мытищи, Олимпийский проспект, д.10</p>
+                <ul class="main-footer__contacts-phone">
+                  <li class="main-footer__contacts-item">
+                    <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="main-footer__contacts-item">
+                    <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="main-footer__contacts-item">
+                    <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="main-footer__contacts-adress">
-              <p>г. Мытищи, Олимпийский проспект, д.10</p>
-            </div>
-            <ul class="main-footer__contacts-phone">
-              <li class="main-footer__contacts-item">
-                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-              </li>
-              <li class="main-footer__contacts-item">
-                <a href="tel:+79253895829">+7 (925) 389-58-29</a>
-              </li>
-              <li class="main-footer__contacts-item">
-                <a href="tel:+79253647813">+7 (925) 364-78-13</a>
-              </li>
-            </ul>
           </div>
         </div>
       </footer>
     </div>
-    <div class="modal modal--closed">
+    <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
-        <button class="modal__closed-button" type="button" aria-label="Закрыть попап.">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+        <button class="modal__close-btn" type="button" aria-label="Закрыть попап." data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite_auto.svg#icon-close"></use>
           </svg>
         </button>
-        <h3>Закажите звонок</h3>
+        <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <div class="form__header">
+        <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__header form__header--modal">
             <label class="visually-hidden" for="name">Имя</label>
-            <input type="text" id="name" placeholder="Имя" required>
+            <input type="text" id="modal-name" minlength="1" maxlength="20" data-name-input placeholder="Имя" required>
             <label class="visually-hidden" for="phone">Телефон</label>
-            <input type="tel" id="phone" pattern="\+7\(\d{3}\)\d{7}" placeholder="Телефон" required>
+            <input type="tel" id="modal-phone" data-phone-input pattern="\+7\(\d{3}\)\d{7}" placeholder="Телефон" required>
           </div>
           <label class="visually-hidden" for="question">Ваш вопрос</label>
           <textarea id="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
-          <div class="form__footer">
+          <div class="modal__form--footer form__footer">
             <button class="form__button button" type="submit">Задать вопрос</button>
-            <input type="checkbox" id="checkbox" required checked>
-            <label for="checkbox">Я согласен на обработку  персональных данных</label>
+            <label>
+              <input type="checkbox" required checked>
+              <span class="form__mark"></span>
+              <span class="form__text">Я согласен на обработку  персональных данных</span>
+            </label>
           </div>
         </form>
       </div>
