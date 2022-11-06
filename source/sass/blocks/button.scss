@@ -25,4 +25,9 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  &:active {
+    background-color: $color-black-pearl-button;
+    opacity: 0.5;
+  }
 }

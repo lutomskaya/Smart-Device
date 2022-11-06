@@ -1,7 +1,8 @@
 .intro {
   min-height: 784px;
   margin-top: 95px;
-  background-image: url("../img/intro.jpg");
+
+  background-image: url("../img/intro.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $color-black-pearl;
@@ -10,86 +11,99 @@
   @include vp-1023 {
     min-height: 540px;
     margin-top: -15px;
+
     background-position: -135px -101px;
     background-size: 1462px auto;
   }
 
   @include vp-767 {
-    min-height: 490px;
+    min-height: 485px;
     margin-top: -10px;
+
     background-position: -195px -30px;
     background-size: 1157px auto;
   }
+}
 
-  & h1 {
-    margin: 0;
-    font-family: $ff-roboto-condensed;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 94px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+.intro h1 {
+  margin: 0;
 
-    color: $color-alice-blue;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 
-    @include vp-767 {
-      font-size: 36px;
-      line-height: 42px;
-      margin-bottom: 8px;
-    }
+  color: $color-alice-blue;
 
-    @include vp-1023 {
-      font-size: 64px;
-      line-height: 75px;
-      margin-bottom: 0;
-    }
+  @include vp-1023 {
+    margin-bottom: 0;
+
+    font-size: 64px;
+    line-height: 75px;
   }
 
-  & p {
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    max-width: 685px;
-    font-size: 22px;
-    line-height: 155%;
+  @include vp-767 {
+    margin-bottom: 8px;
 
-    color: $color-alice-blue;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
 
-    @include vp-1023 {
-      margin-bottom: 57px;
-      margin-top: 0;
-    }
+.intro p {
+  max-width: 685px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
 
-    @include vp-767 {
-      font-size: 14px;
-      margin-bottom: 45px;
-      margin-top: 0;
-    }
+  font-size: 22px;
+  line-height: 155%;
+
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    margin-bottom: 57px;
+    margin-top: 0;
   }
 
-  & a {
-    display: block;
-    max-width: 410px;
-    padding: 15px 25px;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  @include vp-767 {
+    margin-bottom: 45px;
+    margin-top: 0;
 
-    background-color: $color-deep-sky-blue;
-    color: $color-alice-blue;
+    font-size: 14px;
+  }
+}
 
-    @include vp-1023 {
-      margin-left: 45px;
-    }
+.intro a {
+  display: block;
 
-    @include vp-767 {
-      width: 100%;
-      margin-left: 0;
-      padding: 12px;
-      font-size: 14px;
-      line-height: 16px;
-    }
+  max-width: 410px;
+  padding: 15px 25px;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition:
+    background-color $trans-default,
+    box-shadow $trans-default;
+
+  background-color: $color-deep-sky-blue;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px;
+
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -103,6 +117,8 @@
 
   @include vp-767 {
     display: none;
+    font-size: 14px;
+    line-height: 16px;
 
     &--mobile {
       display: block;
@@ -111,16 +127,17 @@
 }
 
 .intro__wrapper {
+  max-width: 1240px;
   padding-top: 210px;
-  padding-left: 178px;
-
-  @include vp-767 {
-    padding-top: 90px;
-    padding-bottom: 190px;
-  }
+  padding-left: 145px;
 
   @include vp-1023 {
     padding-top: 95px;
-    padding-bottom: 205px;
+    padding-bottom: 210px;
+  }
+
+  @include vp-767 {
+    padding-top: 75px;
+    padding-bottom: 190px;
   }
 }

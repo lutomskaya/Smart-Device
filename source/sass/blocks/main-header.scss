@@ -3,24 +3,34 @@
   top: 0;
   right: 0;
   left: 0;
+  width: 100vw;
   z-index: 2;
 
   background: linear-gradient(180deg, $color-black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @include vp-1023 {
     position: relative;
+    top: auto;
   }
 }
 
 .main-header__wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 28% auto 21%;
-  column-gap: 4%;
+  column-gap: 4%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 20px;
+  padding-right: 80px;
   padding-top: 28px;
   padding-bottom: 30px;
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
+
     padding-top: 20px;
     padding-bottom: 25px;
   }
@@ -32,12 +42,20 @@
 }
 
 .main-header__contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-width: 467px;
 
   @include vp-1023 {
-    margin-left: auto;
     align-items: flex-start;
+    min-width: 97px;
+
+    margin-left: auto;
+    margin-bottom: 25px;
     padding-top: 10px;
     padding-right: 12px;
   }
@@ -53,24 +71,21 @@
 .main-header__contacts-link {
   display: flex;
   align-items: center;
+
+  min-width: 210px;
   padding-left: 7px;
   line-height: 18px;
+
   color: $color-default-white;
 
-  & p {
-    display: block;
-
-    @include vp-1023 {
-      display: none;
-    }
-  }
-
   & svg {
-    fill: $color-deep-sky-blue;
     margin-right: 15px;
+
+    fill: $color-deep-sky-blue;
   }
 
   @include vp-1023 {
+    min-width: 20px;
     padding-left: 30px;
   }
 
@@ -79,10 +94,18 @@
   }
 }
 
+.main-header__contacts-link p {
+  display: block;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
 .main-header__button {
-  max-width: 160px;
-  margin-left: auto;
   align-self: center;
+
+  max-width: 160px;
 
   color: $color-alice-blue;
 

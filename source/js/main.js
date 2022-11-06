@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {showText} from './modules/about.js';
+import {initAccordion, toggleFooterAccordion} from './modules/accordion';
+import {checkInputPhone} from './modules/form';
 
 // ---------------------------------
 
@@ -14,9 +16,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  showText();
+  initAccordion();
+  toggleFooterAccordion();
+  checkInputPhone();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  showText();
   window.addEventListener('load', () => {
     initModals();
   });
