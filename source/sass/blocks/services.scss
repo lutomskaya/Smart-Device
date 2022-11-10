@@ -5,8 +5,8 @@
 
 .services__wrapper {
   max-width: 1240px;
-  padding-left: 8px;
   padding-right: 0;
+  padding-left: 8px;
   padding-top: 65px;
   padding-bottom: 140px;
 
@@ -91,57 +91,42 @@
 
 .services__item {
   position: relative;
-  background-image: url("../../img/intro.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color-black-pearl;
-
-  @include retina {
-    background-image: url("../../img/intro@2x.webp");
-  }
 
   &:nth-child(3n+1) {
-    background-size: 430%;
-    background-position: 17% 70%;
+    img {
+      bottom: -50px;
+      left: -130px;
 
-    @include vp-1023 {
-      background-size: 229%;
-      background-position: 30% 96%;
-    }
+      @include vp-1023 {
+        bottom: 0px;
+        left: -225px;
+      }
 
-    @include vp-767 {
-      background-size: 550%;
-      background-position: 30.5% 53%;
-    }
-  }
-
-  &:nth-child(3n+2) {
-    background-size: 430%;
-    background-position: 47% 70%;
-
-    @include vp-1023 {
-      background-size: 229%;
-      background-position: 76% 58%;
-    }
-
-    @include vp-767 {
-      background-size: 550%;
-      background-position: 29.5% 95%;
+      @include vp-767 {
+        bottom: -270px;
+        left: -335px;
+      }
     }
   }
 
   &:nth-child(3n+3) {
-    background-size: 430%;
-    background-position: 78% 70%;
+    img {
+      top: auto;
+      bottom: -60px;
+      left: auto;
+      right: -200px;
 
-    @include vp-1023 {
-      background-size: 229%;
-      background-position: 19% 67%;
-    }
+      @include vp-1023 {
+        right: auto;
+        left: -110px;
+        bottom: -205px;
+      }
 
-    @include vp-767 {
-      background-size: 550%;
-      background-position: 72.5% 70%;
+      @include vp-767 {
+        left: auto;
+        right: -300px;
+        bottom: -170px;
+      }
     }
   }
 
@@ -168,6 +153,30 @@
   }
 }
 
+.services__item img {
+  position: absolute;
+  width: 1494px;
+  height: 818px;
+  max-width: none;
+  bottom: -20px;
+  left: -520px;
+  object-fit: cover;
+  z-index: -1;
+  background-color: $color-black-pearl;
+
+  @include vp-1023 {
+    left: auto;
+    bottom: -250px;
+    right: -150px;
+  }
+
+  @include vp-767 {
+    bottom: 0;
+    right: auto;
+    left: -340px;
+  }
+}
+
 .services__item a {
   color: $color-default-white;
 }
@@ -175,7 +184,7 @@
 .services__item h3 {
   width: 60%;
   margin: 0;
-  padding-top: 48px;
+  padding-top: 45px;
   padding-left: 40px;
 
   font-family: $ff-roboto-condensed;
@@ -216,11 +225,13 @@
 
 .services__link {
   position: relative;
+  z-index: 0;
 
   display: block;
   height: 100%;
   width: 100%;
   min-height: 650px;
+  overflow: hidden;
 
   cursor: pointer;
 
