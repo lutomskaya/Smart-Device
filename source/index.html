@@ -40,7 +40,7 @@
               <p>+7 (495) 000 52 52</p>
             </a>
           </div>
-          <button class="main-header__button button" type="button" data-open-modal="feedback">Заказать звонок</button>
+          <a class="main-header__button button" type="button" data-open-modal="feedback">Заказать звонок</a>
         </div>
       </header>
       <main>
@@ -93,12 +93,6 @@
         </section>
         <section class="about container">
           <h2 class="visually-hidden">Информационный блок.</h2>
-          <div class="about__years">
-            <picture>
-              <source type="image/webp" srcset="img/year.webp 1x, img/year@2x.webp 2x">
-              <img src="img/year.png" width="150" height="320" srcset="img/year@2x.png 2x" alt="год.">
-            </picture>
-          </div>
           <div class="about__description">
             <h3 class="about__title">О&nbsp;компании</h3>
             <div class="about__text" data-text>
@@ -274,7 +268,7 @@
           <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__header form__header--modal">
               <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" id="modal-name" minlength="1" maxlength="20" data-name-input placeholder="Имя" required>
+              <input type="text" id="modal-name" name="modal-name" minlength="1" maxlength="20" data-name-input placeholder="Имя" required>
               <label class="visually-hidden" for="phone">Телефон</label>
               <input type="tel" id="modal-phone" data-phone-input pattern="\+7\(\d{3}\)\d{7}" placeholder="Телефон" required>
             </div>
