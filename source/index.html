@@ -27,20 +27,20 @@
             </a>
           </div>
           <div class="main-header__contacts">
-            <a class="main-header__contacts-link" href="#">
+            <a class="main-header__contacts-link" href="#" tabindex="1">
               <svg width="20" height="20" aria-label="Электронная почта.">
                 <use xlink:href="/img/sprite_auto.svg#email"></use>
               </svg>
               <p>info@sd.ru</p>
             </a>
-            <a class="main-header__contacts-link" href="tel:+74950005252">
+            <a class="main-header__contacts-link" href="tel:+74950005252" tabindex="2">
               <svg width="20" height="20" aria-label="Телефон.">
                 <use xlink:href="/img/sprite_auto.svg#phone-call"></use>
               </svg>
               <p>+7 (495) 000 52 52</p>
             </a>
           </div>
-          <a class="main-header__button button" data-open-modal="feedback">Заказать звонок</a>
+          <a class="main-header__button button" href="#" data-open-modal="feedback" tabindex="3">Заказать звонок</a>
         </div>
       </header>
       <main>
@@ -48,7 +48,7 @@
           <div class="intro__wrapper container">
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="intro__link button" href="#feedback">
+            <a class="intro__link button" href="#feedback" tabindex="4">
               <span class="intro__text">Получить бесплатную консультацию</span>
               <span class="intro__text intro__text--mobile">Бесплатная консультация</span>
             </a>
@@ -103,7 +103,7 @@
               <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
               <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
             </div>
-            <button class="about__button button" type="button" data-button>Подробнее</button>
+            <button class="about__button button" type="button" data-button tabindex="5">Подробнее</button>
           </div>
         </section>
         <section class="services">
@@ -114,7 +114,7 @@
             </h2>
             <ul class="services__list">
               <li class="services__item">
-                <a class="services__link" href="#">
+                <a class="services__link" href="#" tabindex="6">
                   <picture>
                     <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
                     <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Производство" width="1494" height="818" loading="lazy">
@@ -124,7 +124,7 @@
                 </a>
               </li>
               <li class="services__item">
-                <a class="services__link" href="#">
+                <a class="services__link" href="#" tabindex="7">
                   <picture>
                     <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
                     <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Монтаж" width="1494" height="818" loading="lazy">
@@ -134,7 +134,7 @@
                 </a>
               </li>
               <li class="services__item">
-                <a class="services__link" href="#">
+                <a class="services__link" href="#" tabindex="8">
                   <picture>
                     <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
                     <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Комплектующие" width="1494" height="818" loading="lazy">
@@ -155,16 +155,16 @@
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__header">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input type="text" id="name" placeholder="Имя" required>
+                  <input type="text" id="name" placeholder="Имя" required tabindex="9">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input type="tel" id="phone" placeholder="Телефон" data-phone-input required>
+                  <input type="tel" id="phone" placeholder="Телефон" data-phone-input required tabindex="10">
                 </div>
                 <label class="visually-hidden" for="question">Ваш вопрос</label>
-                <textarea id="question" placeholder="Ваш вопрос"></textarea>
+                <textarea id="question" placeholder="Ваш вопрос" tabindex="11"></textarea>
                 <div class="form__footer">
-                  <button class="form__button button" type="submit">Задать вопрос</button>
+                  <button class="form__button button" type="submit" tabindex="13">Задать вопрос</button>
                   <label>
-                    <input type="checkbox" required checked>
+                    <input type="checkbox" required checked tabindex="12">
                     <span class="form__mark"></span>
                     <span class="form__text">Я согласен на обработку  персональных данных</span>
                   </label>
@@ -289,7 +289,7 @@
             <div class="modal__form modal__form--footer form__footer">
               <button class="form__button button" type="submit">Задать вопрос</button>
               <label>
-                <input type="checkbox" required checked>
+                <input type="checkbox" required>
                 <span class="form__mark"></span>
                 <span class="form__text">Я согласен на обработку  персональных данных</span>
               </label>

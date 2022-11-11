@@ -1502,6 +1502,7 @@ button,
   border-radius: 2px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .form__mark:disabled {
@@ -1529,7 +1530,6 @@ button,
   background-image: url("../../img/svg/mark.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
 }
 
 .accordion__button {
