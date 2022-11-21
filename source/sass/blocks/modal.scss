@@ -60,7 +60,11 @@
     position: relative;
 
     width: 500px;
-    padding: 40px;
+    min-height: 610px;
+    padding-top: 37px;
+    padding-left: 40px;
+    padding-right: 45px;
+    padding-bottom: 40px;
 
     background-color: $color-deep-sky-blue;
     color: $color-default-white;
@@ -74,7 +78,7 @@
   h2 {
     margin: 0;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     font-family: $ff-roboto-condensed;
     font-size: 30px;
     line-height: 140%;
@@ -90,8 +94,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 15px;
+    right: 15px;
     z-index: 1;
 
     width: 40px;
@@ -143,9 +147,10 @@
 
 .modal__form--footer .form__button {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal__form .modal__form--footer label {
   width: 100%;
+  padding-left: 10px;
 }

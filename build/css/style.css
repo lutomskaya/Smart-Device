@@ -734,7 +734,11 @@ button,
 .modal__content {
   position: relative;
   width: 500px;
-  padding: 40px;
+  min-height: 610px;
+  padding-top: 37px;
+  padding-left: 40px;
+  padding-right: 45px;
+  padding-bottom: 40px;
   background-color: #00b2ff;
   color: #ffffff;
 }
@@ -742,7 +746,7 @@ button,
 .modal h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   font-family: "Roboto-condensed", "Arial", sans-serif;
   font-size: 30px;
   line-height: 140%;
@@ -758,8 +762,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 15px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -810,11 +814,12 @@ button,
 
 .modal__form--footer .form__button {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal__form .modal__form--footer label {
   width: 100%;
+  padding-left: 10px;
 }
 
 .main-header {
@@ -1152,9 +1157,9 @@ button,
 }
 
 .services__wrapper {
-  max-width: 1240px;
+  max-width: 1220px;
   padding-right: 0;
-  padding-left: 8px;
+  padding-left: 0;
   padding-top: 65px;
   padding-bottom: 140px;
 }
@@ -1293,7 +1298,7 @@ button,
 }
 
 .form {
-  min-width: 49%;
+  min-width: 50%;
 }
 
 .form h2 {
@@ -1440,6 +1445,7 @@ button,
 .form__header--modal {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  gap: 15px;
 }
 
 .form__footer {
@@ -1613,9 +1619,17 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-footer__socials-list li {
+  width: 40px;
+  height: 40px;
 }
 
 .main-footer__socials-list a.focus-visible:focus {
@@ -1628,9 +1642,11 @@ button,
   list-style: none;
 }
 
-.main-footer__nav-list a {
-  display: block;
+.main-footer__nav-list li {
   margin-bottom: 8px;
+}
+
+.main-footer__nav-list a {
   max-width: 220px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
@@ -1646,6 +1662,10 @@ button,
   row-gap: 10px;
 }
 
+.main-footer__contacts li {
+  margin-bottom: 8px;
+}
+
 .main-footer__contacts p {
   margin: 0;
   line-height: 135%;
@@ -1659,8 +1679,6 @@ button,
 }
 
 .main-footer__contacts-phone a {
-  display: block;
-  margin-bottom: 8px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
 }

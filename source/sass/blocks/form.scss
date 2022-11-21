@@ -1,5 +1,5 @@
 .form {
-  min-width: 49%;
+  min-width: 50%;
 
   @include vp-1023 {
     min-width: 100%;
@@ -154,6 +154,7 @@
 
   &--modal {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 
