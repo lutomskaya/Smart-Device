@@ -1,42 +1,36 @@
 .feedback {
-  position: relative;
   background: linear-gradient(139deg, $color-cerulean 34%, $color-deep-sky-blue 34%);
   color: $color-default-white;
   width: 100%;
-  padding-top: 165px;
-  padding-bottom: 248px;
+  overflow: hidden;
 
   @include vp-1023 {
     background: $color-deep-sky-blue;
   }
+}
+
+.feedback__wrapper {
+  position: relative;
+  padding-top: 165px;
+  padding-bottom: 248px;
+  padding-right: 30px;
 
   &::after {
     content: "";
     position: absolute;
+    aspect-ratio: 1.79;
     width: 39%;
-    height: 40%;
-    top: 30%;
-    right: 43%;
+    top: 29%;
+    left: 38px;
 
     background-image: url("../img/paper_airplane.webp");
     background-repeat: no-repeat;
+    background-size: cover;
 
     @include vp-1023 {
       display: none;
     }
   }
-}
-
-.feedback__wrapper {
-  /* display: flex;
-  justify-content: flex-end;
-
-
-   */
-
-  position: relative;
-  padding-right: 25px;
-
 
   @include vp-1023 {
     justify-content: center;

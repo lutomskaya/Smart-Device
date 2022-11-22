@@ -219,6 +219,11 @@
   }
 }
 
+.modal__form input:hover + .modal__form-mark,
+.modal__form input:focus + .modal__form-mark {
+  border: 1px solid $color-black-pearl;
+}
+
 .modal__form-mark {
   width: 15px;
   height: 15px;
@@ -258,4 +263,3 @@
     cursor: pointer;
   }
 }
-

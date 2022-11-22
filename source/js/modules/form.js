@@ -8,15 +8,15 @@ const checkInputPhone = () => {
 
       const prefixNumber = (str) => {
         if (str === '7') {
-          return '7(';
+          return '+7 (';
         }
         if (str === '8') {
-          return '7(';
+          return '+7 (';
         }
         if (str === '9') {
-          return '7(9';
+          return '+7 (9';
         }
-        return '7(';
+        return '+7 (';
       };
 
       let result = '';

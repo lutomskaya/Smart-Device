@@ -75,7 +75,7 @@
   &--nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 45px;
+    column-gap: 37px;
   }
 
   @include vp-1023 {

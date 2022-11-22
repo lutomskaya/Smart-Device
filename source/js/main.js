@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {showText} from './modules/about.js';
 import {initAccordion, toggleFooterAccordion} from './modules/accordion';
 import {checkInputPhone} from './modules/form';
+import {initScroll} from './modules/scroll';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initAccordion();
   toggleFooterAccordion();
   checkInputPhone();
+  initScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -88,11 +88,19 @@
 
     pointer-events: none;
   }
+}
 
+.form input,
+.form textarea {
   @include hover-focus {
     border: 1px solid $color-default-white;
     outline: 1px solid $color-default-white;
   }
+}
+
+.form input:hover + .form__mark,
+.form input:focus + .form__mark {
+  border: 1px solid $color-black-pearl;
 }
 
 .form textarea {
@@ -134,11 +142,6 @@
     opacity: 0.5;
 
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    border: 1px solid $color-default-white;
-    outline: 1px solid $color-default-white;
   }
 }
 
@@ -235,10 +238,6 @@
     opacity: 0.5;
 
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }
 
