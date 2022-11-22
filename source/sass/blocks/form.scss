@@ -1,5 +1,6 @@
 .form {
-  min-width: 49%;
+  width: 50%;
+  margin-left: auto;
 
   @include vp-1023 {
     min-width: 100%;
@@ -150,10 +151,6 @@
     display: flex;
     flex-direction: column;
     gap: 0;
-  }
-
-  &--modal {
-    grid-template-columns: 1fr;
   }
 }
 

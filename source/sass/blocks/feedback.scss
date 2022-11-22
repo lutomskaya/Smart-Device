@@ -2,6 +2,9 @@
   position: relative;
   background: linear-gradient(139deg, $color-cerulean 34%, $color-deep-sky-blue 34%);
   color: $color-default-white;
+  width: 100%;
+  padding-top: 165px;
+  padding-bottom: 248px;
 
   @include vp-1023 {
     background: $color-deep-sky-blue;
@@ -10,10 +13,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 510px;
-    height: 285px;
-    top: 246px;
-    right: 55.2%;
+    width: 39%;
+    height: 40%;
+    top: 30%;
+    right: 43%;
 
     background-image: url("../../img/paper_airplane.webp");
     background-repeat: no-repeat;
@@ -25,12 +28,15 @@
 }
 
 .feedback__wrapper {
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
 
-  padding-top: 165px;
-  padding-bottom: 248px;
+
+   */
+
+  position: relative;
   padding-right: 25px;
+
 
   @include vp-1023 {
     justify-content: center;

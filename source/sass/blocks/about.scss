@@ -28,10 +28,9 @@
   }
 }
 
-.about__text {
+.about__text span {
   @include vp-767 {
-    max-height: 220px;
-    overflow: hidden;
+    display: none;
   }
 }
 
