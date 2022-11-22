@@ -229,6 +229,7 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:disabled {
     opacity: 0.5;
@@ -253,9 +254,8 @@
   clip-path: inset(100%);
 
   &:checked + .form__mark {
-    background-image: url("../../img/svg/mark.svg");
+    background-image: url("../img/svg/mark.svg");
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
   }
 }
