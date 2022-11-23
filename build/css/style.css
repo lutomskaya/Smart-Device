@@ -947,7 +947,7 @@ button,
 }
 
 .modal__form input[type=checkbox]:checked + .modal__form-mark {
-  background-image: url("../../img/svg/mark.svg");
+  background-image: url("../img/svg/mark.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -971,9 +971,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-left: 20px;
   padding-right: 5px;
   padding-top: 28px;
@@ -1023,6 +1023,7 @@ button,
 .main-header__button {
   margin-right: 6%;
   margin-left: auto;
+  margin-top: 8px;
   max-width: 160px;
   color: #f2f5f7;
   background-color: transparent;
@@ -1826,10 +1827,6 @@ button,
 */
 
 @media (max-width: 1439px) {
-  .featuries {
-    padding: 0 20px 120px;
-  }
-
   .services__wrapper {
     padding: 65px 20px 140px;
   }
