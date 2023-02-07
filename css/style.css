@@ -1213,7 +1213,7 @@ button,
   bottom: 0;
   right: 0;
   background-color: #00b2ff;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 3px 0 0 0;
@@ -1276,7 +1276,7 @@ button,
   height: 285px;
   top: 246px;
   right: 55.2%;
-  background-image: url("../../img/paper_airplane.webp");
+  background-image: url("../img/paper_airplane.webp");
   background-repeat: no-repeat;
 }
 
@@ -1502,6 +1502,7 @@ button,
   border-radius: 2px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .form__mark:disabled {
@@ -1526,10 +1527,9 @@ button,
 }
 
 .form input[type=checkbox]:checked + .form__mark {
-  background-image: url("../../img/svg/mark.svg");
+  background-image: url("../img/svg/mark.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
 }
 
 .accordion__button {
@@ -2491,7 +2491,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about__description::before {
-    background-image: url("../../img/year@2x.png");
+    background-image: url("../img/year@2x.png");
     background-size: cover;
   }
 }
